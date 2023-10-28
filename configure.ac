@@ -1,7 +1,9 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.71])
+## 2.71 is for Ubuntu 22.04 Host
+## 2.69 is for autoconf-native --- from Yocto Dunfell -- for GitHub NaikanLinux ...
+AC_PREREQ([2.69])
 AC_INIT([yocto_test],[0.1],[MESSINA.Tony+GitHub@gmail.com])
 
 AC_CONFIG_SRCDIR([yocto_test.c])
