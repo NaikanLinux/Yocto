@@ -5,9 +5,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "yocto_test.h"
-
 void LibHelloWorld (
+  void
 ) {
-  printf_tm("Hello World (from a shared library!)\n");
+  printf("## TM (%s-l%d)[%s()] : Hello World (from a shared library!)\n", __FILE__, __LINE__, __func__);
 }

@@ -6,6 +6,8 @@
 #  include <config.h>
 #endif /* HAVE_CONFIG_H */
 
+#define printf_tm(format, ...) printf("## TM (%s-l%d)[%s()] : " format, __FILE__, __LINE__, __func__ __VA_OPT__(,) __VA_ARGS__);
+
 /*
  * Example function
  */
