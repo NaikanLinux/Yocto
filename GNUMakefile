@@ -1,0 +1,12 @@
+
+lib:
+	gcc -c -fPIC -pedantic -O2 -Wall -Werror -g yocto_lib.c
+	gcc -shared -o libyocto_lib.so -g ./yocto_lib.o
+
+exe:
+	gcc -I./ -L./ -Wall -o yocto_test ./yocto_test.c -lyocto_lib
+	LD_LIBRARY_PATH=./ ./yocto_test
+
+all: yocto_lib.c yocto_test.c
+	lib
+	exe
