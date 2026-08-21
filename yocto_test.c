@@ -13,13 +13,15 @@
 
 #include "yocto_test.h"
 
-int main (
-  int   argc,
-  char *argv[]
+int
+  main (
+     int   argc,
+    char * argv[]
 ) {
+
   printf_tm("Hello Yocto World...\n");
 
   LibHelloWorld();
 
-  return 0;
+  return (EXIT_SUCCESS);
 }
