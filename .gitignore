@@ -8,8 +8,8 @@ ltmain.sh
 m4/
 autom4te.cache/
 
-./.deps
-./.libs
+.deps/
+.libs/
 
 config.h.in
 config.guess*
@@ -20,22 +20,21 @@ depcomp
 install-sh
 missing
 
-./Makefile.in
-./Makefile
+Makefile.in
+Makefile
 
-./config.h.in~
-./config.h
-./config.status
-./config.log
+config.h.in~
+config.h
+config.status
+config.log
 
-./configure
-./configure~
+configure
+configure~
 
-./stamp-h1
-./libtool
-./yocto_test.o
-./yocto_test
-./yocto_lib.lo
-./libyocto_lib.la
-
+stamp-h1
+libtool
+yocto_test.o
+yocto_test
+yocto_lib.lo
+libyocto_lib.la
 
